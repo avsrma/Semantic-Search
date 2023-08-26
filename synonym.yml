@@ -1,0 +1,526 @@
+version: '3.1'
+nlu:
+- synonym: Kasse
+  examples: |
+    - Kasse
+    - gesetzlich
+    - Gesetzlich
+    - Kassenpatient
+    - Kassenpatientin
+    - gesetzliche Versicherung
+    - gesetzliche Krankenversicherung
+    - gesetzlichen Krankenversicherung
+    - gesetzliche Krankenkasse
+    - gesetzlichen Krankenkasse
+    - GKV
+- synonym: Privat
+  examples: |
+    - Privat
+    - Privatpatient
+    - Privatpatientin
+    - privat
+    - private Versicherung
+    - private Krankenversicherung
+    - privaten Krankenversicherung
+    - private Krankenkasse
+    - privaten Krankenkasse
+    - PKV
+    - Beihilfeempfänger
+    - Beihilfeempfängerin
+    - Beihilfe
+    - privat versichert
+- synonym: Selbstzahler
+  examples: |
+    - Selbstzahler
+    - zahle selbst
+    - Selbstzahlerin
+    - übernehme das selbst
+    - selbst
+- synonym: Haarsprechstunde
+  examples: |
+    - Haarsprechstunde
+    - Haarausfall
+    - Haare ausfallen
+    - Alopezie
+    - unerwünschter Behaarung
+    - unerwünschte Behaarung
+    - Haaruntersuchung
+    - starker Behaarung
+    - starke Beharrung
+    - Haartransplantation
+    - Transplantation
+    - Hart Transplantation
+- synonym: gesicherte Entfernung
+  examples: |
+    - gesicherte Entfernung
+    - Hautveränderungen
+    - Warzentherapie
+    - Warzen Therapie
+    - Muttermaluntersuchung
+    - Muttermal Untersuchung
+    - Muttermaloperation
+    - Muttermal Operation
+    - Warzenentfernung
+    - Warzen Entfernung
+    - Muttermalentfernung
+    - Muttermal Entfernung
+    - Warzenbehandlung
+    - Warzen Behandlung
+    - Warzen entfernen
+    - Malignes Melanom
+    - entfernen
+    - Entfernung
+- synonym: Narbentherapie
+  examples: |
+    - Narbentherapie
+    - Narbenbehandlung
+    - Narben Behandlung
+    - Narben
+    - Aknenarbe
+    - Aknenarben
+    - Narbenkorrektur
+    - Narben Korrektur
+    - Narbenoperation
+    - Narben Operation
+    - Kortisoninjektion
+    - Kortoikoidunterspritzung
+    - Narbenlasern
+    - Narbenlaser
+    - Narben Laser
+- synonym: Verödung
+  examples: |
+    - Verödung
+    - Verödung bei Besenreisern
+    - Besenreiser Entfernung
+    - Besenreiser Behandlung
+    - Thermokoagulation
+    - endovenöse Radiofrequenzablation
+    - Sklerotherapie
+    - Sklerosierung
+    - endovenöse behandlung
+    - endovenöse
+- synonym: Reiseberatung
+  examples: |
+    - Reiseberatung
+    - reisemedizinische Beratung
+    - reisemedizinischen Beratungstermin
+    - Reisemedizinische Gesundheitsberatung
+- synonym: Geschlechtserkrankung
+  examples: |
+    - Geschlechtserkrankung
+    - Geschlechtserkrankunguntersuchung
+    - Vaginalinfektion
+    - Papillomaviren
+    - Tripper
+    - Hepatitis
+    - Kandidose
+    - Filzlausbefall
+    - Filzläuse
+    - Papillomvirus
+    - HIV
+    - Papillomavirus
+    - Soor
+    - Dellwarzen
+    - Schanker
+    - Filzlaus
+    - Chlamydia
+    - Gonnorhöe
+    - STD Test
+    - Matrosen am Mast
+    - Gonnorhö
+    - Lustseuche
+    - HPV
+    - Papillomviren
+    - Harnröhreausfluss
+    - Ausfluss aus der Harnröhre
+    - Scheidenpilz
+    - Krätze
+    - Vaginalpilz
+    - Genitalpilz
+    - Lues
+    - Syphilis
+    - Chlamydien
+    - Trichomoniasis
+    - Geschlechtkrankheit
+    - STI Test
+    - sexuelle übertragbare Erkrankung
+    - Feigwarzen
+    - Feigwarzen Lasern
+    - Kondylome
+    - Condylomata acuminata
+    - Acuminata entfernen
+- synonym: Infektionserkrankungen
+  examples: |
+    - Infektionserkrankungen
+    - Herpes
+    - Gesichtsrose
+    - Pilzerkrankung
+    - Herpes zoster
+    - Wundrose
+    - Pilzkrankheit
+    - Kopfrose
+    - Nagelpilz
+    - Nagelpilzbehandlung
+    - Hautpilz
+    - Hautpilzbehandlung
+    - Fußpilz
+    - Fußpilzbehandlung
+    - Pilzbehandlung
+    - Zoster
+    - Gürtelrose
+- synonym: Faltentherapie
+  examples: |
+    - Faltentherapie
+    - Faltenbehandlung
+    - Falten Behandlung
+    - Faltenunterspritzung
+    - Falten Unterspritzung
+    - Botox
+    - Notox
+    - Hyaluron filler
+    - Behandlung mit Fillern
+    - Faltenentfernung
+    - Falten Entfernung
+    - liquid lift
+    - Hautverjüngung
+    - Faltenaugmentation
+    - Falten Augmentation
+    - Argireline
+    - Botulinum
+    - Hyaloronsäurespritze
+    - Hyaloronsäure
+    - Hyaluronspritze
+    - Hyaluronsäureunterspritzung
+    - Lippenaufbau
+- synonym: tropischen Hauterkrankungen
+  examples: |
+    - tropischen Hauterkrankungen
+    - Haut Leishmaniose
+    - Pyodermie
+    - Verbrennungen von einer Qualle
+    - Ausschlag von einer Qualle
+    - Quallenbisse
+    - Blutegelbiss
+    - Weicher Schanker
+    - Würmer unter der Haut
+- synonym: Fett weg Spritze Lipolyse
+  examples: |
+    - Fett weg Spritze Lipolyse
+    - Fett weg Spritze
+    - Lipolyse
+- synonym: AquaPeeling
+  examples: |
+    - Aqua Peeling
+    - Aqua Peeling Hydrodermabrasion
+    - Hydrodermabrasion
+- synonym: Hautkrebsscreening
+  examples: |
+    - Hautkrebsscreening
+    - Hautkrebs screening
+    - Hautkrebsuntersuchung
+    - Hautkrebsbehandlung
+    - Hautkrebs Behandlung
+    - Krebsfrüherkennung
+    - Krebs Screening
+    - Hautkrebs
+    - Haut Krebs
+    - Hauttumor
+    - Haut Tumor
+    - Hautprobe
+    - Hautbiopsie
+    - Haut Biopsie
+    - Melanom
+    - Melanomuntersuchung
+    - Wächterlymphknoten Diagnostik
+    - Sentinel Lymphknoten Detektion
+    - Positronen Emissions Tomographie
+    - Lymphabstromszintigrafie
+    - Dermatoskopie
+    - Hautkrebsfrüherkennung
+    - histologische Diagnostik
+    - feingewebliche Diagnostik
+    - Basalzellkarzinom
+    - Krebsvorsorgeuntersuchung
+    - Krebsvorsorgetermin
+    - Basaliom
+    - Leberfleckkontrolle
+- synonym: Rezeptabholung
+  examples: |
+    - Rezeptabholung
+    - Rezept abholen
+    - Rezept
+- synonym: Allergiediagnostik
+  examples: |
+    - Allergiediagnostik
+    - Allergietest
+    - Allergieuntersuchung
+    - Allergie
+    - Allergiker
+    - Allergiker Termin
+- synonym: Biorevitalisierung
+  examples: |
+    - Biorevitalisierung
+    - Skinbooster
+- synonym: Laserbehandlung
+  examples: |
+    - Laserbehandlung
+    - Lasern
+    - Laser
+- synonym: akute Schmerzen
+  examples: |
+    - akute Schmerzen
+    - plötzliche Schmerzen
+    - akute Symptome
+- synonym: chronische Schmerzen
+  examples: |
+    - chronische Schmerzen
+    - andauernde Schmerzen
+    - anhaltende Schmerzen
+    - langwierige Schmerzen
+- synonym: orthopädische Gutachten
+  examples: |
+    - orthopädische Gutachten
+    - Gutachten vom Orthopäden
+    - orthopädisches Gutachten
+    - Gutachten Orthopäde
+- synonym: sportmedizinische Untersuchung
+  examples: |
+    - sportmedizinische Untersuchung
+    - sportmedizinische Beratung
+    - sportmedizinische Behandlung
+    - sportmedizinischen Checkup
+    - Beratung Sportmedizin
+    - Untersuchung Sportmedizin
+- synonym: Kontrolle
+  examples: |
+    - Kontrolle
+    - Kontrolltermin
+    - Kontrollbehandlung
+    - Kontrolluntersuchung
+- synonym: Beratung
+  examples: |
+    - Beratung
+    - Konsultation
+    - Beratungstermin
+- synonym: Schwangerschaftsvorsorge
+  examples: |
+    - Schwangerschaftsvorsorge
+    - Schwangerschaftsvorsorgetermin
+    - Schwangerschaftsbetreeung
+- synonym: OP-Nachsorge
+  examples: |
+    - OP-Nachsorge
+    - Nachsorge für meine OP
+    - postoperative Nachsorge
+    - OP-Nachsorgetermin
+- synonym: Gespräch
+  examples: |
+    - Gespräch
+    - Besprechung
+- synonym: Brustultraschall
+  examples: |
+    - Brustultraschall
+    - Mammasonografie
+    - Mammasonographie
+    - Ultraschalluntersuchung der Brust
+    - Ultraschall der Brust
+    - Sonographie der Brust
+    - Ultraschalltermin für die Brust
+- synonym: NT-Screening
+  examples: |
+    - NT-Screening
+    - Nackentransparenzmessung
+    - Nackendichtemessung
+    - Nackenfaltenmessung
+    - Messung der Nackenfalte
+    - Messung der Nackendichte
+    - NT Messung
+    - Ultraschall der Nackenfalte
+    - Ersttrimesterscreening
+    - NT
+- synonym: CTG-Kontrolle
+  examples: |
+    - CTG-Kontrolle
+    - CTG
+    - Kardiotokographie
+    - Kardiotokografie
+    - Wehenschreiber
+- synonym: Einsetzen Spirale (ohne Vollnarkose)
+  examples: |
+    - Einsetzen Spirale (ohne Vollnarkose)
+    - Spirale
+    - IUP
+    - Hormonspirale
+    - Kupferspirale
+- synonym: Doppler-Untersuchung
+  examples: |
+    - Doppler-Untersuchung
+    - Dopplersonografie
+    - Dopplersonographie
+    - Doppler Ultraschall
+    - Doppler Untersuchung
+- synonym: Bioenergie
+  examples: |
+    - Bioenergie
+    - Bioenergie-Informationstherapie
+    - bioenergetische Informationsterapie
+- synonym: Notfalltermin
+  examples: |
+    - Notfalltermin
+    - Notfall
+- synonym: Moxa - Therapie
+  examples: |
+    - Moxa - Therapie
+    - Moxen
+    - Moxibustion
+    - Moxa Heilmethode
+- synonym: geburtsvorbereitende Akupunktur
+  examples: |
+    - geburtsvorbereitende Akupunktur
+    - Akupunktur in der Schwangerschaft
+    - Akupunktur bei Schwangerschaftsbeschwerden
+    - Akupunktur für Schwangere
+    - Akupunktur bei Schwangeren
+- synonym: Orthopädische Krankheitsbilder/Bewegungsaparat
+  examples: |
+    - Orthopädische Krankheitsbilder/Bewegungsaparat
+    - orthopädische Erkrankung
+- synonym: Rheumatologische Erkrankungen
+  examples: |
+    - Rheumatologische Erkrankungen
+    - Rheuma
+    - rheumatische Erkrankung
+    - Arthrose
+    - Arthritis
+- synonym: Frauenheilkunde
+  examples: |
+    - Frauenheilkunde
+    - Gynäkologie
+    - Frauenarzt
+- synonym: Beikost Beratung
+  examples: |
+    - Beikost Beratung
+    - Beikost Konsultation
+    - Beikost Information
+- synonym: Lymphologie
+  examples: |
+    - Lymphologie
+    - Lymphologen
+    - Lymphologin
+    - Lymphödem
+    - Lymphabflussstörung
+    - Lymphknoten
+- synonym: Wöchnerinnensprechstunde
+  examples: |
+    - Wöchnerinnensprechstunde
+    - Wochenbett Sprechstunde
+- synonym: Bioidentische Hormone nach Rimkus - Erstberatung
+  examples: |
+    - Bioidentische Hormone nach Rimkus - Erstberatung
+    - Erstberatung für bioidentische Hormone
+- synonym: Bioidentische Hormone nach Rimkus- Kontrolle
+  examples: |
+    - Bioidentische Hormone nach Rimkus- Kontrolle
+    - Kontrolle wegen der bioidentischen Hormone
+- synonym: Pillenkontrolle
+  examples: |
+    - Pillenkontrolle
+    - Pille
+    - Kontrolle wegen der Pille
+    - Kontrolluntersuchung wegen der Pille
+- synonym: Erstuntersuchung nach Wochenbett
+  examples: |
+    - Erstuntersuchung nach Wochenbett
+    - Wochenbettuntersuchung
+- synonym: Hysterocontrastsonographie
+  examples: |
+    - Hysterocontrastsonographie
+    - Eileiterduchgängigkeit
+    - HKSG
+    - Hysterokontrastsalpingografie
+- synonym: MonaLisa Touch
+  examples: |
+    - Mona Lisa Touch
+    - vulvo vaginale Atrophie
+    - Atrophie
+    - Verjüngung der Vagina
+    - Laser Vaginalverjüngung
+- synonym: Neurologie
+  examples: |
+    - Neurologie
+    - neurologische Untersuchung
+    - neurologische Beschwerden
+- synonym: Pneumologie
+  examples: |
+    - Pneumologie
+    - pneumologische Untersuchung
+    - lungenärztliche Untersuchung
+    - Probleme mit der Lunge
+    - Probleme beim Atmen
+- synonym: Sport
+  examples: |
+    - Sport
+    - Sportunfall
+    - Überlastungsschaden
+    - Überlastungsschäden
+    - Überlastungssyndrom
+    - Sportschaden
+    - Sportschäden
+    - Sportverletzung
+    - Sportmedizin
+- synonym: Urologie
+  examples: |
+    - Urologie
+    - urologische Untersuchung
+    - urologische Probleme
+    - urologische Beschwerden
+- synonym: Gastroenterologie
+  examples: |
+    - Gastroenterologie
+    - Magen Darm Erkrankung
+    - Magen Darm Krankheit
+    - Magen Darm Probleme
+- synonym: Pädiatrie
+  examples: |
+    - Pädiatrie
+    - Kinderarzt
+    - Kinderärztin
+    - Kindermedizin
+    - Jugendmedizin
+    - Kinder und Jugendmedizin
+    - Kinderheilkunde
+- synonym: Akupunktur
+  examples: |
+    - Akupunktur
+    - Akupunkturtermin
+    - Akupunkturbehandlung
+    - TCM Behandlung
+- synonym: Ultraschall
+  examples: |
+    - Ultraschall
+    - echographie
+- synonym: Darmspiegelung
+ examples: |
+   - Darmspiegelung
+   - Koloskopie
+- synonym: Zahnreinigung
+ examples: |
+   - Zahnreinigung
+   - Zahnsteinreinigung
+   - zahnsteinreinigung
+- synonym: Lungenfunktionsuntersuchung
+ examples: |
+   - Lungenfunktionsuntersuchung
+   - Lungenfunktion
+- synonym: Suchtmedizinische Grundversorgung
+ examples: |
+   - Suchtmedizinische Grundversorgung
+   - Drogenproblem
+- synonym: Blutabnahme
+ examples: |
+   - Blutabnahme
+   - Blutprobe
+- synonym: Führerschein-Gutachten
+ examples: |
+   - Führerschein-Gutachten
+   - Führerschein
